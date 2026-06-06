@@ -1,0 +1,5 @@
+# Python Dependencies for KMDC Pipeline
+
+openai>=1.0.0
+httpx>=0.24.0
+deep-translator>=1.11.0
