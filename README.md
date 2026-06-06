@@ -46,3 +46,28 @@ The pipeline consists of **4 modular components** (Python + Shell scripts):
 The final **Kurdish Multi-Domain Corpus (KMDC)** is publicly available on Hugging Face:
 
 👉 [Download KMDC Dataset Here](https://huggingface.co/datasets/shkomq/Kurdish-Multi-Domain-Corpus-KMDC)
+
+## 🧪 Quick Start
+
+    # Start Ollama server
+    cd LLM_Orchestration
+    python3 run_server_bg_first.py
+    
+    # Generate multi-domain dataset
+    python3 run_generator_bg_first.py
+    
+    # Clean and process data
+    cd ../Data_Engineering
+    python3 dataset_cleaner.py input.json output.json
+    
+    # Translate categories
+    cd ../Translation_Pipeline
+    python3 advanced_translator.py
+    
+    # Analyze results
+    cd ../Analysis_Tools
+    python3 analyze_categories.py final_corpus.json
+    
+    # Stop all processes
+    cd ../LLM_Orchestration
+    ./pkill_ollama.sh
