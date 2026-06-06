@@ -41,6 +41,8 @@ The pipeline consists of **4 modular components** (Python + Shell scripts):
     ./install_ollama.sh
     ./setup_ollama_model.sh  # Place Gemma 3 27B GGUF file first
 
-##📊 Dataset Access
-The final Kurdish Multi-Domain Corpus (KMDC) is publicly available on Hugging Face:
-👉 Download KMDC Dataset Here
+## 📊 Dataset Access
+
+The final **Kurdish Multi-Domain Corpus (KMDC)** is publicly available on Hugging Face:
+
+👉 [Download KMDC Dataset Here](https://huggingface.co/datasets/shkomq/Kurdish-Multi-Domain-Corpus-KMDC)
