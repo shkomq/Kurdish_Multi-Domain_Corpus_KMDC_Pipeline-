@@ -115,18 +115,18 @@ Environment Variables
 
 This research was supported by the **College of Intelligence and Computing, Tianjin University, China**. Special thanks to the contributors and colleagues who assisted in the acquisition and curation of multi-domain Kurdish language resources.
 
+
 ## ✍️ Citation
 
 If you use this pipeline or the KMDC dataset in your research, please cite:
 
-```bibtex
-@article{kmdc_v1_2026,
-  title={Kurdish Multi-Domain Corpus (KMDC) V1},
-  author={Shko Muhammed Qader and Zheng Wang},
-  year={2026},
-  publisher={github},
-  howpublished={\url{https://github.com/shkomq/Kurdish_Multi_Domain_Corpus_KMDC_Pipeline/}}
-}
+    @article{kmdc_v1_2026,
+      title={Kurdish Multi-Domain Corpus (KMDC) V1},
+      author={Shko Muhammed Qader and Zheng Wang},
+      year={2026},
+      publisher={github},
+      howpublished={\url{https://github.com/shkomq/Kurdish_Multi_Domain_Corpus_KMDC_Pipeline/}}
+    }
 
 ## 📄 License
 
