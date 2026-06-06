@@ -71,3 +71,63 @@ The final **Kurdish Multi-Domain Corpus (KMDC)** is publicly available on Huggin
     # Stop all processes
     cd ../LLM_Orchestration
     ./pkill_ollama.sh
+
+## 📋 Covered Domains
+
+| Domain (English) | Domain (Kurdish) |
+|------------------|------------------|
+| Politics | سیاسەت |
+| Economy | ئابوری |
+| Health | تەندروستی |
+| Culture & Arts | کەلتور و هونەر |
+| Science | زانست |
+| Sports | وەرزش |
+| Religion | دین |
+| Law & Justice | یاسا |
+| Education | پەروەردە |
+| History | مێژوو |
+| Environment | ژینگە |
+| Media | میدیا |
+
+## ⚙️ Configuration
+Model Parameters (Modelfile)
+    PARAMETER temperature 0.7
+    PARAMETER top_p 0.9
+    PARAMETER top_k 40
+    PARAMETER repeat_penalty 1.1
+    PARAMETER num_ctx 8192
+
+Environment Variables
+    export OLLAMA_HOST="0.0.0.0:11434"
+    export OLLAMA_HOME="/mnt/storage1/shko/ollama"
+    export CUDA_VISIBLE_DEVICES="0,1"
+
+## 📈 Performance
+
+| Operation | Scale | Time |
+|-----------|-------|------|
+| Model loading | 27B params | ~15 sec |
+| Q&A generation | 1,000 prompts | ~3 min |
+| Dataset cleaning | 100,000 records | ~5 sec |
+| Category translation | 500 categories | ~2 min |
+
+## 🤝 Acknowledgments
+
+This research was supported by the **College of Intelligence and Computing, Tianjin University, China**. Special thanks to the contributors and colleagues who assisted in the acquisition and curation of multi-domain Kurdish language resources.
+
+## ✍️ Citation
+
+If you use this pipeline or the KMDC dataset in your research, please cite:
+
+```bibtex
+@article{kmdc_v1_2026,
+  title={Kurdish Multi-Domain Corpus (KMDC) V1},
+  author={Shko Muhammed Qader and Zheng Wang},
+  year={2026},
+  publisher={github},
+  howpublished={\url{https://github.com/shkomq/Kurdish_Multi_Domain_Corpus_KMDC_Pipeline/}}
+}
+
+## 📄 License
+
+Academic Research Use Only
