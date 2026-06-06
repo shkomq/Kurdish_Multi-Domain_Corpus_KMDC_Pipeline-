@@ -27,3 +27,20 @@ The pipeline consists of **4 modular components** (Python + Shell scripts):
     ```bash
     git clone https://github.com/shkomq/Kurdish-Multi-Domain-Corpus-KMDC-Pipeline.git
     cd Kurdish-Multi-Domain-Corpus-KMDC-Pipeline
+
+2.  **Setup Virtual Environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    pip install -r requirements.txt
+
+3. **Install Ollama and Model:**
+    ```bash
+    cd LLM_Orchestration
+    chmod +x install_ollama.sh
+    ./install_ollama.sh
+    ./setup_ollama_model.sh  # Place Gemma 3 27B GGUF file first
+
+##📊 Dataset Access
+The final Kurdish Multi-Domain Corpus (KMDC) is publicly available on Hugging Face:
+👉 Download KMDC Dataset Here
